@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Battle System</title>
+    <title>Pokedex</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="w-full h-full bg-red-600">
@@ -12,21 +12,20 @@
         <header class="border max-w-3xl mx-auto">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" class="mx-auto" alt="Pokemon Logo">
             <p class="text-center mt-2">
-                <span class="text-2xl font-bold">Pokémon Battle System</span>
+                <span class="text-2xl font-bold">Pokédex</span>
                 <span class="text-xl">by</span>
                 <span class="text-xl font-light">Rui Barros</span>
             </p>
         </header>
 
-        <div class="flex">
-            <div class="w-full basis-6/12">
+        <div class="max-w-2xl mx-auto">
+            <div class="w-full">
                 <!-- Placeholder for player one searching for a pokemon -->
                 <div class="my-4 p-4 flex h-full">
                     <div class="w-full">
-                        <p class="text-xl font-bold mb-2">Player One</p>
                         <div class="flex">
-                            <input type="text" class="w-full text-xs px-2" placeholder="Search for a Pokémon">
-                            <button class="bg-blue-500 text-white p-1">
+                            <input type="text" class="w-full text-xs px-2" placeholder="Search for a Pokémon" id="search-inputP1">
+                            <button class="bg-blue-500 text-white p-1" id="search-buttonP1">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                 </svg>
@@ -35,22 +34,9 @@
                     </div>
                 </div>       
             </div>
-
-            <div class="w-full basis-6/12">
-                <div class="my-4 p-4 flex h-full">
-                    <div class="w-full">
-                        <p class="text-xl font-bold mb-2">Player Two</p>
-                        <div class="flex">
-                            <input type="text" class="w-full text-xs px-2" placeholder="Search for a Pokémon">
-                            <button class="bg-green-500 text-white p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>       
-            </div>
+        </div>
+        <div class="max-w-xs bg-blue-200 rounded-xl mx-auto py-10" id="pokeContainer">
+           
         </div>
     </main>
     <script src="script.js"></script>
